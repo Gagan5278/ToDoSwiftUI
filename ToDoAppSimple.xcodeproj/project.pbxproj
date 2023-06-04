@@ -12,10 +12,12 @@
 		5DD1C9912A2BEBDF007DC3C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD1C9902A2BEBDF007DC3C1 /* Assets.xcassets */; };
 		5DD1C9942A2BEBDF007DC3C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD1C9932A2BEBDF007DC3C1 /* Preview Assets.xcassets */; };
 		5DD1C9962A2BEBDF007DC3C1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C9952A2BEBDF007DC3C1 /* Persistence.swift */; };
-		5DD1C9992A2BEBDF007DC3C1 /* ToDoAppSimple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C9972A2BEBDF007DC3C1 /* ToDoAppSimple.xcdatamodeld */; };
 		5DD1C9A32A2BEBDF007DC3C1 /* ToDoAppSimpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C9A22A2BEBDF007DC3C1 /* ToDoAppSimpleTests.swift */; };
 		5DD1C9AD2A2BEBDF007DC3C1 /* ToDoAppSimpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C9AC2A2BEBDF007DC3C1 /* ToDoAppSimpleUITests.swift */; };
 		5DD1C9AF2A2BEBDF007DC3C1 /* ToDoAppSimpleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C9AE2A2BEBDF007DC3C1 /* ToDoAppSimpleUITestsLaunchTests.swift */; };
+		5DD1C9BD2A2BECAD007DC3C1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C9BC2A2BECAD007DC3C1 /* Home.swift */; };
+		5DD1C9BF2A2BF271007DC3C1 /* CustomFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C9BE2A2BF271007DC3C1 /* CustomFilterView.swift */; };
+		5DD1C9C62A2C08E3007DC3C1 /* ToDoAppSimple.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C9C52A2C08E3007DC3C1 /* ToDoAppSimple.xcdatamodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +44,14 @@
 		5DD1C9902A2BEBDF007DC3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DD1C9932A2BEBDF007DC3C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5DD1C9952A2BEBDF007DC3C1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		5DD1C9982A2BEBDF007DC3C1 /* ToDoAppSimple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoAppSimple.xcdatamodel; sourceTree = "<group>"; };
 		5DD1C99E2A2BEBDF007DC3C1 /* ToDoAppSimpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppSimpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD1C9A22A2BEBDF007DC3C1 /* ToDoAppSimpleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppSimpleTests.swift; sourceTree = "<group>"; };
 		5DD1C9A82A2BEBDF007DC3C1 /* ToDoAppSimpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppSimpleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD1C9AC2A2BEBDF007DC3C1 /* ToDoAppSimpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppSimpleUITests.swift; sourceTree = "<group>"; };
 		5DD1C9AE2A2BEBDF007DC3C1 /* ToDoAppSimpleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppSimpleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DD1C9BC2A2BECAD007DC3C1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5DD1C9BE2A2BF271007DC3C1 /* CustomFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFilterView.swift; sourceTree = "<group>"; };
+		5DD1C9C52A2C08E3007DC3C1 /* ToDoAppSimple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoAppSimple.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,12 @@
 		5DD1C98B2A2BEBDE007DC3C1 /* ToDoAppSimple */ = {
 			isa = PBXGroup;
 			children = (
+				5DD1C9C52A2C08E3007DC3C1 /* ToDoAppSimple.xcdatamodel */,
+				5DD1C9BB2A2BECA2007DC3C1 /* View */,
 				5DD1C98C2A2BEBDE007DC3C1 /* ToDoAppSimpleApp.swift */,
 				5DD1C98E2A2BEBDE007DC3C1 /* ContentView.swift */,
 				5DD1C9902A2BEBDF007DC3C1 /* Assets.xcassets */,
 				5DD1C9952A2BEBDF007DC3C1 /* Persistence.swift */,
-				5DD1C9972A2BEBDF007DC3C1 /* ToDoAppSimple.xcdatamodeld */,
 				5DD1C9922A2BEBDF007DC3C1 /* Preview Content */,
 			);
 			path = ToDoAppSimple;
@@ -131,6 +136,15 @@
 				5DD1C9AE2A2BEBDF007DC3C1 /* ToDoAppSimpleUITestsLaunchTests.swift */,
 			);
 			path = ToDoAppSimpleUITests;
+			sourceTree = "<group>";
+		};
+		5DD1C9BB2A2BECA2007DC3C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DD1C9BC2A2BECAD007DC3C1 /* Home.swift */,
+				5DD1C9BE2A2BF271007DC3C1 /* CustomFilterView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DD1C9962A2BEBDF007DC3C1 /* Persistence.swift in Sources */,
+				5DD1C9BF2A2BF271007DC3C1 /* CustomFilterView.swift in Sources */,
 				5DD1C98F2A2BEBDE007DC3C1 /* ContentView.swift in Sources */,
+				5DD1C9BD2A2BECAD007DC3C1 /* Home.swift in Sources */,
+				5DD1C9C62A2C08E3007DC3C1 /* ToDoAppSimple.xcdatamodel in Sources */,
 				5DD1C98D2A2BEBDE007DC3C1 /* ToDoAppSimpleApp.swift in Sources */,
-				5DD1C9992A2BEBDF007DC3C1 /* ToDoAppSimple.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,19 +601,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5DD1C9972A2BEBDF007DC3C1 /* ToDoAppSimple.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5DD1C9982A2BEBDF007DC3C1 /* ToDoAppSimple.xcdatamodel */,
-			);
-			currentVersion = 5DD1C9982A2BEBDF007DC3C1 /* ToDoAppSimple.xcdatamodel */;
-			path = ToDoAppSimple.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5DD1C9812A2BEBDE007DC3C1 /* Project object */;
 }
