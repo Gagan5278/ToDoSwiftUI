@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct CustomFilterView<Content: View>: View {
-    var content: (ToDo) -> Content
+    var content: ([ToDo], [ToDo]) -> Content
     @FetchRequest private var result: FetchedResults<ToDo>
+    @Binding var filterDate: Date
     // MARK: - init
-    init(displayPendingTask: Bool, filterDate: Date, content: @escaping (ToDo) -> Content) {
-        
+    init(filterDate: Binding<Date>, @ViewBuilder content: @escaping ([ToDo], [ToDo]) -> Content) {
         let calender = Calendar.current
-        let startDay = calender.startOfDay(for: filterDate)
+        let startDay = calender.startOfDay(for: filterDate.wrappedValue)
         let endDate = calender.date(
             bySettingHour: 23,
             minute: 59,
             second: 59,
-            of: filterDate
+            of: startDay
         )
         
-        let predicate = NSPredicate(format: "date >= %@ AND date <= %@ AND isCompleted != %@", (startDay as NSDate), (endDate! as NSDate), NSNumber(booleanLiteral: displayPendingTask))
+        let predicate = NSPredicate(format: "date >= %@ AND date <= %@", argumentArray: [startDay, endDate!])
         
         _result = FetchRequest<ToDo>(
             entity: ToDo.entity(),
@@ -35,21 +35,36 @@ struct CustomFilterView<Content: View>: View {
             predicate: predicate
         )
         self.content = content
+        self._filterDate = filterDate
     }
     
     var body: some View {
-        Group {
-            if result.isEmpty {
-                Text("No Tasks found!")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-                    .listRowSeparator(.hidden)
-            } else {
-                ForEach(result) {
-                    content($0)
-                }
+        content(filterTasks().0, filterTasks().1)
+            .onChange(of: filterDate) { newValue in
+                // Clear old predicate
+                result.nsPredicate = nil
+                
+                let calender = Calendar.current
+                let startDay = calender.startOfDay(for: newValue)
+                let endDate = calender.date(
+                    bySettingHour: 23,
+                    minute: 59,
+                    second: 59,
+                    of: startDay
+                )
+                
+                let predicate = NSPredicate(format: "date >= %@ AND date <= %@", argumentArray: [startDay, endDate!])
+                
+                // assign new predicate
+                result.nsPredicate = predicate
+                
             }
-        }
+    }
+    
+    private func filterTasks() -> ([ToDo], [ToDo]) {
+        let pendingTasks = result.filter { !$0.isCompleted}
+        let completedTasks = result.filter { $0.isCompleted}
+        return (pendingTasks, completedTasks)
     }
 }
 

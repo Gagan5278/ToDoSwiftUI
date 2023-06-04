@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DCE49992A2D114F00DE99FB /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE49982A2D114F00DE99FB /* TaskRow.swift */; };
 		5DD1C98D2A2BEBDE007DC3C1 /* ToDoAppSimpleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C98C2A2BEBDE007DC3C1 /* ToDoAppSimpleApp.swift */; };
 		5DD1C98F2A2BEBDE007DC3C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1C98E2A2BEBDE007DC3C1 /* ContentView.swift */; };
 		5DD1C9912A2BEBDF007DC3C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD1C9902A2BEBDF007DC3C1 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DCE49982A2D114F00DE99FB /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		5DD1C9892A2BEBDE007DC3C1 /* ToDoAppSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoAppSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD1C98C2A2BEBDE007DC3C1 /* ToDoAppSimpleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppSimpleApp.swift; sourceTree = "<group>"; };
 		5DD1C98E2A2BEBDE007DC3C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				5DD1C9BC2A2BECAD007DC3C1 /* Home.swift */,
 				5DD1C9BE2A2BF271007DC3C1 /* CustomFilterView.swift */,
+				5DCE49982A2D114F00DE99FB /* TaskRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				5DD1C98F2A2BEBDE007DC3C1 /* ContentView.swift in Sources */,
 				5DD1C9BD2A2BECAD007DC3C1 /* Home.swift in Sources */,
 				5DD1C9C62A2C08E3007DC3C1 /* ToDoAppSimple.xcdatamodel in Sources */,
+				5DCE49992A2D114F00DE99FB /* TaskRow.swift in Sources */,
 				5DD1C98D2A2BEBDE007DC3C1 /* ToDoAppSimpleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,9 +442,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoAppSimple/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DR5YYJ2CC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -453,8 +459,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learning.unsplash.ToDoAppSimple;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schwarz.digitalTwin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,9 +473,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoAppSimple/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DR5YYJ2CC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -481,8 +490,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.learning.unsplash.ToDoAppSimple;
+				PRODUCT_BUNDLE_IDENTIFIER = com.schwarz.digitalTwin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
